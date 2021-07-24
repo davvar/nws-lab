@@ -1,12 +1,14 @@
-import React, { FC } from 'react'
-import { useHistory, useLocation } from 'react-router-dom'
-import { queryParams } from '../../common/helpers/queryParams'
-import { DualRingLoader } from '../../components/Loaders/DualRingLoader'
-import { Images, ResponsiveImageGrid } from '../../components/ResponsiveImageGrid'
+import './style.scss';
+
+import React, { FC } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
+
+import { queryParams } from '../../common/helpers/queryParams';
+import { DualRingLoader } from '../../components/Loaders/DualRingLoader';
+import { Images, ResponsiveImageGrid } from '../../components/ResponsiveImageGrid';
 import { Toolbar } from '../../layout/Toolbar';
-import { useAppDispatch, useAppSelector } from '../../store'
-import { catsSelector, getCats, ICat, loadMoreCats } from '../../store/cats'
-import './style.scss'
+import { useAppDispatch, useAppSelector } from '../../store';
+import { catsSelector, getCats, ICat, loadMoreCats } from '../../store/cats';
 
 const CatsPage: FC = () => {
   const location = useLocation()

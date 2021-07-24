@@ -1,10 +1,12 @@
-import React, { Suspense } from 'react'
-import { Switch, Route } from 'react-router-dom'
-import './App.scss'
-import { FullScreenLoader } from './components/Loaders/FullScreenLoader'
-import { LeftSidebar } from './layout'
-import { useAppDispatch, useAppSelector } from './store'
-import { categoriesSelector, getCategories } from './store/categories'
+import './App.scss';
+
+import React, { Suspense } from 'react';
+import { Route, Switch } from 'react-router-dom';
+
+import { FullScreenLoader } from './components/Loaders/FullScreenLoader';
+import { LeftSidebar } from './layout';
+import { useAppDispatch, useAppSelector } from './store';
+import { categoriesSelector, getCategories } from './store/categories';
 
 const CatsPage = React.lazy(() => import('./pages/CatsPage'))
 const NotFoundPage = React.lazy(() => import('./pages/NotFoundPage'))

@@ -1,10 +1,12 @@
-import React, { FC } from 'react'
-import { NavLink } from 'react-router-dom'
-import { capitalize } from '../../common/helpers'
-import { queryParams } from '../../common/helpers/queryParams'
-import { useAppSelector } from '../../store'
-import { categoriesSelector } from '../../store/categories'
-import './style.scss'
+import './style.scss';
+
+import React, { FC } from 'react';
+import { NavLink } from 'react-router-dom';
+
+import { capitalize } from '../../common/helpers';
+import { queryParams } from '../../common/helpers/queryParams';
+import { useAppSelector } from '../../store';
+import { categoriesSelector } from '../../store/categories';
 
 export const LeftSidebar: FC = () => {
   const { categories } = useAppSelector(categoriesSelector)

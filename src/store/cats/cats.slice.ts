@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+
 import { http } from '../../services/http.service';
 import { ICat, ICatsQueryParams, ICatsState } from './cats.types';
 

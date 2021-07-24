@@ -1,5 +1,7 @@
-import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+
+import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
+
 import categoriesReducer from './categories/categories.slice';
 import catsReducer from './cats/cats.slice';
 

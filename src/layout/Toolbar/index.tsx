@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
-import { queryParams } from '../../common/helpers/queryParams'
-import { ICatsQueryParams } from '../../store/cats'
-import './style.scss'
+import './style.scss';
+
+import React, { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
+
+import { queryParams } from '../../common/helpers/queryParams';
+import { ICatsQueryParams } from '../../store/cats';
 
 const PAGE_SIZES = [10, 20, 50]
 export const Toolbar = () => {

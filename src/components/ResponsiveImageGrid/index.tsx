@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
 import './styles.scss';
+
+import React, { FC } from 'react';
 
 export type Images = { src: string }[];
 
