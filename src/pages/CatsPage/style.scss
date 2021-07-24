@@ -1,0 +1,28 @@
+.cat-loading-container {
+  height: calc(100vh - 100px);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  &__btn {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    background: #1a2947;
+    cursor: pointer;
+
+    &:disabled {
+      background: #1a29475e;
+      cursor: disabled;
+    }
+  }
+
+
+}

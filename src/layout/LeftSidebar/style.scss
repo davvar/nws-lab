@@ -1,0 +1,27 @@
+#left-sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(26, 41, 71);
+  overflow-x: hidden;
+
+  .active-link {
+    background-color: #fff;
+    color: black;
+  }
+
+  a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+}
